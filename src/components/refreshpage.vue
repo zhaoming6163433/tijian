@@ -1,7 +1,7 @@
 <template>
   <div class="refreshpage content">
       <div v-html="refreshname"></div>
-      <div @click="reload()">刷新</div>
+      <div class="reshreshbtn" @click="reload()"><img src="../../static/img/icon_shuaxin.png"/><span>刷新</span></div>
   </div>
 </template>
 
@@ -49,13 +49,13 @@ export default {
         top:2.9rem;
         @include font(0.7rem,2.7rem);
         border-bottom:1px solid $bordercolor;
-        color:$gray2;
+        color:$gray;
 
         >div:nth-child(1){
             position: absolute;
             left:1.5rem;
         }
-        >div:nth-child(2){
+        .reshreshbtn{
             @include wh(4rem,1.65rem);
             position: absolute;
             right:1.55rem;
@@ -63,8 +63,21 @@ export default {
             border-radius: 4px;
             text-align: center;
             top:0.5rem;
-            line-height: 1.65rem;
+            line-height: 1.6rem;
             cursor: pointer;
+            img{
+                width:1.2rem;
+                margin-right: 0.2rem;
+                vertical-align: middle;
+            }
+            span{
+                display:inline-block;
+                height:1.65rem;
+                vertical-align: middle;
+            }
+        }
+        .reshreshbtn:hover{
+            background-color:$bordercolor;
         }
   }
 </style>

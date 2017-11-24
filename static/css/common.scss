@@ -1,0 +1,174 @@
+/*.router-fade-enter-active, .router-fade-leave-active {
+      transition: opacity .1s;
+}
+.router-fade-enter, .router-fade-leave-active {
+    opacity: 0;
+}*/
+
+#app {
+    font-family: 'Microsoft YaHei';
+    color: #000000;
+    font-size: 16px;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+    outline:none;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+::-webkit-input-placeholder {
+    color: #999999;
+}
+
+img{
+    width:100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*文字超出省略号 第二行超出省略*/
+
+.ellipisis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ellipisis2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textright {
+    text-align: right;
+}
+.padleft{
+    padding-left: 1rem;
+}
+.divline{
+    height: 0.2rem;
+    background-color:$bordercolor;
+}
+.divhead{
+    padding-left: 1rem;
+    height: 2.4rem;
+    background-color:$wihte_c;
+    border-top:0.2rem solid $bordercolor;
+    border-bottom:1px solid $bordercolor;
+    @include font(0.8rem,2.4rem);
+}
+/*自适应颜色*/
+
+.mywhite{
+    color:#fff;
+}
+/*公共样式*/
+.fixed{
+    position: fixed;
+}
+
+/*登录输入框*/
+.app_input{
+    width: 16.4rem;
+    height:2.5rem;
+    border-radius: 2px;
+    border:1px solid $bordercolor;
+    font-size:0.9rem;
+    padding:0 0.75rem;
+}
+/*普通输入框*/
+.app_input_a{
+    width:10.7rem;
+    height:1.65rem;
+    border-radius: 2px;
+    border:1px solid $bordercolor;
+    font-size:0.7rem;
+    padding:0 0.4rem;
+    color:$gray;
+}
+/*日期样式*/
+.myeldata>input{
+    position: relative;
+    width:100%;
+    height:1.75rem;
+    border-radius: 2px;
+    font-size:0.7rem;
+    color:$gray;
+}
+.el-input--prefix .el-input__inner{
+    padding-left:0.4rem;
+    padding-right:2.1rem;
+}
+.el-icon-circle-close{
+    margin-right: 0.8rem;
+}
+.el-icon-time:before{
+    position: relative;
+    top: 0.2rem;
+    left: 10rem;
+    content:'';
+    width: 0.9rem;
+    height: 1rem;
+    display: inline-block;
+    @include bis('../static/img/icon_rili.png')
+}
+/*登录按钮*/
+.app_btn{
+    background-color:$topgreen;
+    width:100%;
+    border: 1px solid rgba(32,128,103,0.16);
+    border-radius: 2px;
+    color:$wihte_c;
+    height:2.5rem;
+    font-size:0.9rem;
+    cursor: pointer;
+}
+.app_btn:hover{
+    background-color:$logoback;
+}
+.app_btn_in{
+    display:inline-block;
+    background-color:$topgreen;
+    width:100%;
+    border-radius: 2px;
+    color:$wihte_c;
+    height:1.75rem;
+    cursor: pointer;
+    text-align: center;
+    @include font(0.7rem,1.75rem);
+}
+.app_btn_in:hover{
+    background-color:$logoback;
+}
+.app_btn_in_w{
+    display:inline-block;
+    background-color:$wihte_c;
+    width:100%;
+    border-radius: 2px;
+    color:$gray;
+    height:1.75rem;
+    cursor: pointer;
+    text-align: center;
+    border:1px solid $bordercolor;
+    @include font(0.7rem,1.75rem);
+}
+.app_btn_in_w:hover{
+    background-color:$bordercolor;
+}

@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import home from '@/view/home'//内容路由
 import homechild from '@/view/home/homechild'//首页
 import addphy from '@/view/check/addphy'//添加检查
-import login from '@/view/login/login'//添加检查
+import nocheck from '@/view/check/nocheck'//未检查
+import login from '@/view/login/login'//登录
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
                 path: '/check/addphy',
                 name: 'addphy',
                 component: addphy
+            },
+            {//未检查
+                path: '/check/nocheck',
+                name: 'nocheck',
+                component: nocheck
             }
         ]
     },

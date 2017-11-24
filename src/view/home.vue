@@ -4,7 +4,9 @@
         <menusys></menusys>
         <refreshpage></refreshpage>
         <div class="content content1">
-            <router-view class="child-view"></router-view>
+            <div class="contentin">
+                <router-view class="child-view"></router-view>
+            </div>
         </div>
         <bottomlogo></bottomlogo>
   </div>
@@ -50,16 +52,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
     .child-view{
-        @include minw(49rem);
+        @include minw(55rem);
         @include font(0.8rem,0.8rem);
     }
     .content1{
-        @include minw(21rem);
         left:12.9rem;
         top:5.6rem;
         bottom: 2.75rem;
         overflow-x: auto;
-        padding:1.5rem;
+        padding:1.5rem 0 1.5rem 1.5rem;
         background-color:$pageback;
+        color:$gray;
+        .contentin{
+            padding-right:1.5rem;
+            min-width: 55rem;
+        }
     }
 </style>

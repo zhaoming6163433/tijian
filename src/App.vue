@@ -19,7 +19,8 @@ export default {
     return {
       titlename: {
         'homechild' : '系统首页',
-        'addphy' : '添加体检'
+        'addphy' : '添加体检',
+        'nocheck' : '未检查'
       }
     }
   },
@@ -58,123 +59,5 @@ export default {
 </script>
 
 <style lang="scss" >
-/*.router-fade-enter-active, .router-fade-leave-active {
-      transition: opacity .1s;
-}
-.router-fade-enter, .router-fade-leave-active {
-    opacity: 0;
-}*/
-
-#app {
-  font-family: 'Microsoft YaHei';
-  color: #000000;
-  font-size: 16px;
-}
-
-body {
-
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-blockquote,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-pre,
-form,
-fieldset,
-legend,
-button,
-input,
-textarea,
-th,
-td {
-  outline:none;
-  margin: 0;
-  padding: 0;
-  list-style-type:none;
-}
-
-::-webkit-input-placeholder {
-  color: #999999;
-}
-
-img{
-    width:100%;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-/*文字超出省略号 第二行超出省略*/
-
-.ellipisis {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.ellipisis2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.textleft {
-  text-align: left;
-}
-
-.textright {
-  text-align: right;
-}
-
-
-/*自适应颜色*/
-
-.mywhite{
-    color:#fff;
-}
-/*公共样式*/
-.fixed{
-  position: fixed;
-}
-
-/*输入框*/
-.app_input{
-    width: 16.4rem;
-    height:2.5rem;
-    border-radius: 2px;
-    border:1px solid $bordercolor;
-    font-size:0.9rem;
-    padding:0 0.75rem;
-}
-.app_btn{
-    background-color:$topgreen;
-    width:100%;
-    border: 1px solid rgba(32,128,103,0.16);
-    border-radius: 2px;
-    color:#fff;
-    height:2.5rem;
-    font-size:0.9rem;
-    cursor: pointer;
-}
+@import 'static/css/common.scss';
 </style>

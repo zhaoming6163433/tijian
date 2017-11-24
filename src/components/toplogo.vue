@@ -8,7 +8,7 @@
             <i class="divline"></i>
             <img class="img1" src="../../static/img/btn_shouye2.png"/>
             <i class="divline"></i>
-            <img class="img2" src="../../static/img/icon_guanbi.png"/>
+            <img @click="closepc()" class="img2" src="../../static/img/icon_guanbi.png"/>
         </div>
   </div>
 </template>
@@ -16,25 +16,27 @@
 <script>
 
 export default {
-  name: 'toplogo',
-  props : [],
-  data () {
-    return {
+    name: 'toplogo',
+    props : [],
+    data () {
+        return {
+
+        }
+    },
+    methods : {
+        closepc(){
+            this.$router.push({'name':'login'})
+        }
+    },
+    mounted(){
 
     }
-  },
-  methods : {
-
-  },
-  mounted(){
-
-  }
 }
 
 </script>
 
 <style lang="scss" scoped>
-  .toplogo{
+    .toplogo{
         background-color:$topgreen;
         @include minw(36.9rem);
         @include wh(100%,2.9rem);
@@ -78,5 +80,5 @@ export default {
                 margin:0 0.7rem;
             }
         }
-  }
+    }
 </style>
