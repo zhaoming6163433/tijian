@@ -8,7 +8,7 @@
                     <div>
                         <div class="input_div userpass username"><input v-model="username" class="app_input" placeholder="账户名称" type="text"/><i></i></div>
                         <div class="input_div userpass password"><input v-model="password" class="app_input" placeholder="账户密码" type="password"/><i></i></div>
-                        <div class="passwordstyle"><div><input id="remember" type="checkbox" v-model="checkremember" /><label for="remember" class="span1">记住密码</label></div><div><span class="span2">忘记密码？</span></div></div>
+                        <div class="passwordstyle"><div><el-checkbox  v-model="checkremember">记住密码</el-checkbox></div><div><span class="span2">忘记密码？</span></div></div>
                         <div class="btn" @click="gohome()"><button class="app_btn" >登录</button></div>
                     </div>
                 </div>

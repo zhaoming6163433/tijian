@@ -52,7 +52,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
     .child-view{
-        @include minw(55rem);
+        @include minw(50rem);
         @include font(0.8rem,0.8rem);
     }
     .content1{
@@ -65,7 +65,7 @@ export default {
         color:$gray;
         .contentin{
             padding-right:1.5rem;
-            min-width: 55rem;
+            min-width: 50rem;
         }
     }
 </style>

@@ -59,5 +59,6 @@ export default {
 </script>
 
 <style lang="scss" >
+@import 'static/css/myelementui.scss';
 @import 'static/css/common.scss';
 </style>
