@@ -19,8 +19,9 @@ export default {
     return {
       titlename: {
         'homechild' : '系统首页',
-        'addphy' : '添加体检',
-        'nocheck' : '未检查'
+        'allphy' : '全部体检',
+        'nocheck' : '待检查',
+        'handlelog' : '操作日志'
       }
     }
   },

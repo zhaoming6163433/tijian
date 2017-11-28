@@ -6,7 +6,7 @@
 }*/
 
 #app {
-    font-family: 'Microsoft YaHei';
+    font-family: 'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif';
     color: #000000;
     font-size: 16px;
 }
@@ -72,7 +72,7 @@ img{
     background-color:$wihte_c;
     border-top:0.2rem solid $bordercolor;
     border-bottom:1px solid $bordercolor;
-    @include font(0.8rem,2.4rem);
+    @include font(0.7rem,2.4rem);
 }
 /*自适应颜色*/
 
@@ -83,7 +83,10 @@ img{
 .fixed{
     position: fixed;
 }
-
+/*输入框选择框宽高*/
+.inputwh{
+    @include wh(11.6rem,1.75rem);
+}
 /*登录输入框*/
 .app_input{
     width: 16.4rem;
@@ -150,4 +153,30 @@ img{
 }
 .app_btn_in_w:hover{
     background-color:$bordercolor;
+}
+/*表格样式*/
+.spanleft{
+    margin-right:0.45rem;
+}
+.piliang{
+    margin: 0 1rem;
+    @include font(0.7rem,2.4rem);
+}
+.tablepadding{
+    background-color:$wihte_c;
+    padding: 1.5rem 1.2rem;
+}
+.checkedall{//全选
+    @include font(0.7rem,0.7rem);
+    margin: 1.85rem 0 0 .75rem;
+    color:$gray;
+}
+/*分页*/
+.pagingpage{
+    float: right;
+    color:$gray;
+    margin-top: 1.5rem;
+}
+.font16{
+    font-size:0.8rem;
 }

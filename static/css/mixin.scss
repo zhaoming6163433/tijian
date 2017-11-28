@@ -68,7 +68,7 @@
 }
 
 //字体大小、行高、字体
-@mixin font($size, $line-height, $family: 'Microsoft YaHei') {
+@mixin font($size, $line-height, $family: 'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif') {
 	font: #{$size}/#{$line-height} $family;
 }
 

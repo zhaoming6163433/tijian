@@ -25,7 +25,9 @@
             <div class="divhead">体检体检统计</div>
             <div class="info">
                 <div class="infodata"></div>
-                <div class="infoimg"></div>
+                <div class="infoimg">
+                    <g2line></g2line>
+                </div>
             </div>
         </section>
     </div>
@@ -33,6 +35,7 @@
 
 <script>
 import util from 'src/util/util.js'
+import g2line from 'src/components/g2line'
 import { get_healthInformationCategoryList } from 'src/model/api.js'
 
 export default {
@@ -44,7 +47,7 @@ export default {
         }
     },
     components: {
-
+        g2line
     },
     created(){
 

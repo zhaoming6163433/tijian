@@ -62,7 +62,7 @@ export default {
         overflow-x: auto;
         padding:1.5rem 0 1.5rem 1.5rem;
         background-color:$pageback;
-        color:$gray;
+        color:$gray!important;
         .contentin{
             padding-right:1.5rem;
             min-width: 50rem;

@@ -25,11 +25,11 @@ export default {
             menulist:[
                 {'name':'首页','imgname':'btn_shouye','menuin':[{'name':'系统首页','page':'homechild'},{'name':'账户设置'},{'name':'登录日志'}]},
                 {'name':'病例','imgname':'btn_jianli','menuin':[{'name':'病例列表'},{'name':'添加病例'},{'name':'设置标签'}]},
-                {'name':'检查','imgname':'btn_jiancha','menuin':[{'name':'添加体检','page':'addphy'},{'name':'未检查','page':'nocheck'},{'name':'已检查'},{'name':'套餐设置'}]},
+                {'name':'检查','imgname':'btn_jiancha','menuin':[{'name':'全部体检','page':'allphy'},{'name':'待体检','page':'nocheck'},{'name':'体检中'},{'name':'待总检'},{'name':'已完成'}]},
                 {'name':'报告','imgname':'btn_baogao','menuin':[{'name':'全部体检'},{'name':'待体检'},{'name':'体检中'},{'name':'待总检'},{'name':'已完成'}]},
                 {'name':'统计','imgname':'btn_tongji','menuin':[{'name':'体检统计'},{'name':'异常统计'}]},
                 {'name':'设置','imgname':'btn_shouye','menuin':[{'name':'平台信息'},{'name':'模板设置'}]},
-                {'name':'权限','imgname':'btn_quanxian','menuin':[{'name':'部门管理'},{'name':'成员管理'},{'name':'操作日志'}]}
+                {'name':'权限','imgname':'btn_quanxian','menuin':[{'name':'部门管理'},{'name':'成员管理'},{'name':'操作日志','page':'handlelog'}]}
             ]
         }
     },

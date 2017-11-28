@@ -12,6 +12,7 @@
   "dependencies": {
     "better-scroll": "^0.4.0",
     "element-ui": "^2.0.5",
+    "g2": "^2.3.13",
     "mint-ui": "^2.2.7",
     "n-zepto": "^1.2.0",
     "vue": "^2.3.3",

@@ -45,6 +45,11 @@
         display: none;
     }
 }
+.el-pagination{
+    .el-icon-arrow-up:before{
+        top: 0;
+    }
+}
 /*表格样式*/
 .el-table__body,.el-table__header{
     border-collapse: collapse;
